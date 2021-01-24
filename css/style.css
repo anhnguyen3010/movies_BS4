@@ -67,12 +67,9 @@ span.fa.fa-bars {
 /* end header */
 
 /* carousel */
-.carousel-movies {
-  position: relative;
-}
+
 .carousel-movies .carousel-indicators {
-  position: absolute;
-  left: 20%;
+  padding-left:10%;
   justify-content: start;
   margin: 0 0 50px;
 }
@@ -84,7 +81,7 @@ span.fa.fa-bars {
   background: transparent;
   margin-bottom: 50px;
 }
-.carousel-movies .carousel-inner .carousel-item img {
+.carousel-item__image {
   min-height: 600px;
 }
 .carousel-movies .carousel-indicators li.active {
@@ -706,7 +703,7 @@ span.fa.fa-bars {
   /* carousel */
   .carousel-item__caption {
     top: 60%;
-    left: 40%;
+    left: 45%;
   }
   .carousel-item__caption span.title {
     font-size: 14px;
@@ -725,6 +722,7 @@ span.fa.fa-bars {
   .carousel-movies .carousel-indicators {
     margin-bottom: 20px;
   }
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -746,6 +744,14 @@ span.fa.fa-bars {
   .showing-movies .nav-tabs {
     display: flex;
     flex-direction: column;
+  }
+  /* carousel button */
+  .button-text span{
+    font-size: 10px;
+  }
+  .carousel-button .button-text i {
+    font-size: 20px;
+    padding-right: 5px;
   }
   /* footer */
   .footer-list {
